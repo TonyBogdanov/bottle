@@ -1,0 +1,47 @@
+// Dependencies
+@import "../units/px";
+
+// Google Material Design (ish) shadow - highly customizable
+@mixin shadow-material(
+  // Depth of the shadow, bigger depth equals bigger shadow, 1 through 5, defaults to 1
+  $depth:         1,
+
+  // Should the shadow be rendered as "bottom-only" or more like an outer-glow (default)
+  $bottom:        false,
+
+  // The color of the shadow, defaults to black
+  $color:         #000,
+
+  // Target shadow size unit, defaults to em
+  $unit:          em
+) {
+  @if 1 > $depth or 5 < $depth {
+    @error "Invalid depth `#{$depth}`, must be 1 through 5.";
+  }
+
+  @if $bottom {
+    @if 1 == $depth {
+      box-shadow: 0 px(2, $unit) px(4, $unit) rgba($color, 0.12), 0 px(2, $unit) px(4, $unit) rgba($color, 0.27);
+    } @elseif 2 == $depth {
+      box-shadow: 0 px(3, $unit) px(6, $unit) rgba($color, 0.16), 0 px(3, $unit) px(6, $unit) rgba($color, 0.26);
+    } @elseif 3 == $depth {
+      box-shadow: 0 px(10, $unit) px(20, $unit) rgba($color, 0.19), 0 px(6, $unit) px(6, $unit) rgba($color, 0.26);
+    } @elseif 4 == $depth {
+      box-shadow: 0 px(14, $unit) px(28, $unit) rgba($color, 0.25), 0 px(10, $unit) px(10, $unit) rgba($color, 0.25);
+    } @elseif 5 == $depth {
+      box-shadow: 0 px(19, $unit) px(38, $unit) rgba($color, 0.30), 0 px(15, $unit) px(12, $unit) rgba($color, 0.25);
+    }
+  } @else {
+    @if 1 == $depth {
+      box-shadow: 0 0 px(3, $unit) px(0.75, $unit) rgba($color, 0.12), 0 0 px(2, $unit) px(0.5, $unit) rgba($color, 0.24);
+    } @elseif 2 == $depth {
+      box-shadow: 0 0 px(6, $unit) px(1.5, $unit) rgba($color, 0.16), 0 0 px(6, $unit) px(1.5, $unit) rgba($color, 0.23);
+    } @elseif 3 == $depth {
+      box-shadow: 0 0 px(20, $unit) px(5, $unit) rgba($color, 0.19), 0 0 px(6, $unit) px(1.5, $unit) rgba($color, 0.23);
+    } @elseif 4 == $depth {
+      box-shadow: 0 0 px(28, $unit) px(7, $unit) rgba($color, 0.25), 0 0 px(10, $unit) px(2.5, $unit) rgba($color, 0.22);
+    } @elseif 5 == $depth {
+      box-shadow: 0 0 px(38, $unit) px(9.5, $unit) rgba($color, 0.30), 0 0 px(12, $unit) px(3, $unit) rgba($color, 0.22);
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// Bourbon's calc() mixin does not support !important
+@mixin calc($property, $value, $important: false, $prefix: '', $suffix: '') {
+  $suffix:              if($important, $suffix '!important', $suffix);
+
+  @if $property == 'transform' {
+    -webkit-transform:  unquote("#{$prefix}-webkit-calc(#{$value})#{$suffix}");
+    -moz-transform:     unquote("#{$prefix}-moz-calc(#{$value})#{$suffix}");
+    -ms-transform:      unquote("#{$prefix}-ms-calc(#{$value})#{$suffix}");
+    -o-transform:       unquote("#{$prefix}-o-calc(#{$value})#{$suffix}");
+    transform:          unquote("#{$prefix}calc(#{$value})#{$suffix}");
+  } @else {
+    #{$property}:       unquote("#{$prefix}-webkit-calc(#{$value})#{$suffix}");
+    #{$property}:       unquote("#{$prefix}calc(#{$value})#{$suffix}");
+  }
+}

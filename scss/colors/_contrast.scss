@@ -1,0 +1,18 @@
+// Dependencies
+@import "brightness";
+
+// Get a dark or light color depending on the best contrast with the input color
+@function contrast($color, $dark: #000, $light: #fff) {
+  @if $color == null {
+    @error "Contrast input color must be specified";
+  } @else {
+    $color-brightness:  brightness($color);
+    $light-brightness:  brightness($light);
+    $dark-brightness:   brightness($dark);
+    @return if(
+                    abs($color-brightness - $light-brightness) > abs($color-brightness - $dark-brightness),
+                    $light,
+                    $dark
+    );
+  }
+}

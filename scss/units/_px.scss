@@ -1,0 +1,12 @@
+// Dependencies
+@import "../variables/base-size";
+@import "set-unit";
+@import "remove-unit";
+
+// Because of the nature of most graphic editors, the world still revolves around pixels
+// Thus, it's much easier to "think" in pixels when sizing stuff, but still be able to use scalable units
+// This function allows you to convert a value from pixels to a relative unit (defaults to em)
+// The conversion is based on the $base-size variable
+@function px($value, $unit: em) {
+  @return set-unit(remove-unit($value) / remove-unit($base-size), $unit);
+}

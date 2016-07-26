@@ -1,0 +1,14 @@
+// This is a workaround until any of these are resolved either by polymer or by sass devs
+// https://github.com/sass/sass/issues/1832
+// https://github.com/sass/sass/issues/1128
+
+// NOTE: Requires custom compiler logic
+// Intended for use with a modified libSass compiler built with Visual Studio
+// Produces: --polymer-mixin-name: {};
+
+// If you also want to use this, contact me at support@tonybogdanov.com for instructions on how to build the compiler
+@mixin polymer-mixin($property) {
+  polymer-mixin-open: $property;
+  @content;
+  polymer-mixin-close: $property;
+}

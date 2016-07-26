@@ -4,7 +4,7 @@ $bottle-variables:            (
 All relative units and all conversions will be based on this value."),
 
 
-);
+) !default; // Use !default to avoid double imports overwrites
 
 // Set a value for a bottle variable
 @mixin bottle-set($name, $value) {

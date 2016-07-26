@@ -1,5 +1,5 @@
 // Dependencies
-@import "../variables/base-size";
+@import "../variables/bottle-variables";
 @import "set-unit";
 @import "remove-unit";
 
@@ -8,5 +8,5 @@
 // This function allows you to convert a value from pixels to a relative unit (defaults to em)
 // The conversion is based on the $base-size variable
 @function px($value, $unit: em) {
-  @return set-unit(remove-unit($value) / remove-unit($base-size), $unit);
+  @return set-unit(remove-unit($value) / remove-unit(bottle-get('base-size')), $unit);
 }

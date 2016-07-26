@@ -27,15 +27,19 @@ And you're done.
 To use bottle's mixins and variables (produces no CSS):
 
 ```scss
-// Define your customization variables before importing the mixin
-// ...
 @import "bower_components/bottle/scss/mixins";
+
+// Define any customization variables after importing the mixin
+// ...
 ```
 
 To bootstrap your project (produces CSS):
 
 ```scss
-// Define your customization variables before importing the mixin
+@import "bower_components/bottle/scss/mixins";
+
+// Define any customization variables after importing the mixin, but before the bootstrap
 // ...
+
 @import "bower_components/bottle/scss/bootstrap";
 ```

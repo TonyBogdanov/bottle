@@ -1,0 +1,7 @@
+// Dependencies
+@import "../variables/bottle-variables";
+
+// Base settings for the entire document
+html {
+  font-size: bottle-get('font-size');
+}

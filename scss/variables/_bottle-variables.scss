@@ -1,0 +1,44 @@
+// List of all variables used by bottle
+$bottle-variables:            (
+        base-size:            (description: "Set the base size for the entire HTML document in pixels, e.g. 16px.
+All relative units and all conversions will be based on this value."),
+
+
+);
+
+// Set a value for a bottle variable
+@mixin bottle-set($name, $value) {
+  @if not map_has_key($bottle-variables, $name) {
+    @error "Cannot set variable `#{$name}`, no such variable is registered.
+
+Available names are:
+#{map_keys($bottle-variables)}.
+
+";
+  } @else {
+    $bottle-variables:  map_merge($bottle-variables, ($name: map_merge(map_get($bottle-variables, $name), (value: $value)))) !global;
+  }
+}
+
+// Get the value of a bottle variable
+// Throws an error if the variable hasn't been set prior
+@function bottle-get($name) {
+  @if not map_has_key($bottle-variables, $name) {
+    @error "Cannot get variable `#{$name}`, no such variable is registered.
+
+Available names are:
+#{map_keys($bottle-variables)}.
+
+";
+  } @else if not map_has_key(map_get($bottle-variables, $name), value) {
+    @error "Variable `#{$name}` is being used, but it was never set.
+Please call `@include bottle-set('#{$name}', value)` after importing the mixins, but before importing the bootstrap.
+
+Variable description:
+#{map_get(map_get($bottle-variables, $name), description)}
+
+";
+  } @else {
+    @return map_get(map_get($bottle-variables, $name), value);
+  }
+}

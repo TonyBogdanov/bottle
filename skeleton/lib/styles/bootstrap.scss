@@ -1,0 +1,92 @@
+// Dependencies
+@import "modules/modules";
+
+// Bottle bootstrap
+@import "../../../bower_components/bottle/scss/bootstrap";
+
+// Demo only styles
+// TODO remove
+.demo-block {
+  display: block;
+  position: relative;
+  border-top: transparent px(5, rem) solid;
+  border-bottom: transparent px(5, rem) solid;
+  padding: get-spacer-half() 0;
+
+  @include spacer();
+  @include spacer-block();
+
+  .before,
+  .after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: px(5, rem);
+    background: #eee;
+    border-radius: px(5, rem);
+  }
+
+  .before {
+    top: px(-5);
+  }
+
+  .after {
+    bottom: px(-5);
+  }
+
+  & + .demo-code {
+    margin-top: -1 * get-spacer();
+  }
+}
+
+.demo-code {
+  display: block;
+  position: relative;
+  border: transparent px(5, rem) solid;
+  border-top: 0;
+  padding: get-spacer-fourth() !important;
+  background: transparent !important;
+
+  .pre {
+    max-height: 1.5 * 5rem;
+    background: transparent !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  @include spacer();
+
+  .left,
+  .right,
+  .bottom {
+    display: block;
+    position: absolute;
+    background: #eee;
+    border-radius: px(5, rem);
+  }
+
+  .left {
+    left: px(-5);
+    top: px(-5);
+    width: px(5, rem);
+
+    @include calc(height, '100% + #{px(10, rem)}');
+  }
+
+  .right {
+    right: px(-5.05);
+    top: px(-5);
+    width: px(5, rem);
+
+    @include calc(height, '100% + #{px(10, rem)}');
+  }
+
+  .bottom {
+    left: px(-5);
+    bottom: px(-5);
+    height: px(5, rem);
+
+    @include calc(width, '100% + #{px(10, rem)}');
+  }
+}

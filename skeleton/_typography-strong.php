@@ -1,0 +1,1 @@
+<p class="p">This is some regular and some <strong class="strong">strong</strong> text.</p>

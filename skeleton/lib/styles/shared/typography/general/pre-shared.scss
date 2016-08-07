@@ -1,0 +1,8 @@
+// Dependencies
+@import "../../../modules/modules";
+
+@include pre() {
+  display: block;
+
+  @include spacer-collapsible();
+}

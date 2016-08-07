@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Horizontal Rule
+@mixin hr() {
+  @include modular-element(hr) {
+    display: block;
+
+    @content;
+  }
+}

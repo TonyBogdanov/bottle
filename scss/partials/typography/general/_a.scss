@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Anchor
+@mixin a() {
+  @include modular-element(a) {
+    display: inline;
+
+    @content;
+  }
+}

@@ -1,0 +1,12 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Strong
+@mixin strong() {
+  @include modular-element(strong) {
+    display: inline;
+    font-weight: bold;
+
+    @content;
+  }
+}

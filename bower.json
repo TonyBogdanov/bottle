@@ -8,7 +8,7 @@
   "moduleType": [],
   "license": "MIT",
   "main": [
-    "scss/_bottle.scss"
+    "scss/_mixins.scss"
   ],
   "ignore": [
     "**/.*",
@@ -18,9 +18,9 @@
     "tests"
   ],
   "dependencies": {
+    "polymer": "^1.6.0",
     "bourbon": "^4.2.7",
     "mathsass": "^0.9.5",
-    "bootstrap": "4",
     "meyer-reset": "*"
   }
 }

@@ -1,0 +1,108 @@
+// Dependencies
+@import "../variables/bottle-variables";
+
+// Retrieve space size variations
+@function get-spacer-fourth() {
+  @return bottle-get('spacer') / 4;
+}
+
+@function get-spacer-third() {
+  @return bottle-get('spacer') / 3;
+}
+
+@function get-spacer-half() {
+  @return bottle-get('spacer') / 2;
+}
+
+@function get-spacer() {
+  @return bottle-get('spacer');
+}
+
+@function get-spacer-double() {
+  @return bottle-get('spacer') * 2;
+}
+
+@function get-spacer-triple() {
+  @return bottle-get('spacer') * 3;
+}
+
+@function get-spacer-quadruple() {
+  @return bottle-get('spacer') * 4;
+}
+
+@function get-spacer-collapse-fourth() {
+  @return bottle-get('spacer-collapse') / 4;
+}
+
+@function get-spacer-collapse-third() {
+  @return bottle-get('spacer-collapse') / 3;
+}
+
+@function get-spacer-collapse-half() {
+  @return bottle-get('spacer-collapse') / 2;
+}
+
+@function get-spacer-collapse() {
+  @return bottle-get('spacer-collapse');
+}
+
+@function get-spacer-collapse-double() {
+  @return bottle-get('spacer-collapse') * 2;
+}
+
+@function get-spacer-collapse-triple() {
+  @return bottle-get('spacer-collapse') * 3;
+}
+
+@function get-spacer-collapse-quadruple() {
+  @return bottle-get('spacer-collapse') * 4;
+}
+
+// Apply spacer margins
+@mixin spacer() {
+  margin-bottom: get-spacer();
+}
+@mixin counter-spacer() {
+  margin-bottom: 0;
+}
+
+// Adjusts the top margin to account for collapsible siblings
+// The element must be registered in the $collapsible-elements bottle variable
+@mixin collapsible() {
+  $selectors: ();
+  @each $selector in bottle-get('collapsible-elements') {
+    $selectors: append($selectors, unquote('& + #{$selector}'), comma);
+  }
+  #{$selectors} {
+    margin-top: get-spacer-collapse() - get-spacer();
+  }
+}
+@mixin counter-collapsible() {
+  $selectors: ();
+  @each $selector in bottle-get('collapsible-elements') {
+    $selectors: append($selectors, unquote('& + #{$selector}'), comma);
+  }
+  #{$selectors} {
+    margin-top: 0;
+  }
+}
+
+// A shorthand combination for spacer() and collapsible()
+@mixin spacer-collapsible() {
+  @include spacer();
+  @include collapsible();
+}
+@mixin counter-spacer-collapsible() {
+  @include counter-spacer();
+  @include counter-collapsible();
+}
+
+// For blocks containing spacer elements, the last one will need to be compensated if such blocks need a padding
+// If there were to be no padding, simple margin collapse would solve the issue
+@mixin spacer-block() {
+  &::after {
+    content: '';
+    display: block;
+    margin-top: -1 * get-spacer();
+  }
+}

@@ -1,0 +1,45 @@
+// Dependencies
+@import "../../../modular/element";
+
+// White spaces
+@mixin white-space-normal() {
+  white-space: normal !important;
+}
+
+@mixin white-space-nowrap() {
+  white-space: nowrap !important;
+}
+
+@mixin white-space-pre() {
+  white-space: pre !important;
+}
+
+@mixin white-space-pre-line() {
+  white-space: pre-line !important;
+}
+
+@mixin white-space-pre-wrap() {
+  white-space: pre-wrap !important;
+}
+
+@mixin white-spaces() {
+  .white-space-normal {
+    @include white-space-normal();
+  }
+
+  .white-space-nowrap {
+    @include white-space-nowrap();
+  }
+
+  .white-space-pre {
+    @include white-space-pre();
+  }
+
+  .white-space-pre-line {
+    @include white-space-pre-line();
+  }
+
+  .white-space-pre-wrap {
+    @include white-space-pre-wrap();
+  }
+}

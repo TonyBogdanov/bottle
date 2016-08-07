@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Paragraph
+@mixin p() {
+  @include modular-element(p) {
+    display: block;
+
+    @content;
+  }
+}

@@ -4,14 +4,10 @@
 // MIT License
 
 // MathSass
-@import "../../mathsass/dist/math";
-
-//// Bootstrap
-//@import "../../bootstrap/scss/variables";
-//@import "../../bootstrap/scss/mixins";
+@import "vendor/mathsass";
 
 // Bourbon
-@import "../../bourbon/app/assets/stylesheets/bourbon";
+@import "vendor/bourbon";
 
 // Components
 @import "variables/variables";
@@ -20,3 +16,7 @@
 @import "properties/properties";
 @import "polymer/polymer";
 @import "shadows/shadows";
+@import "modular/modular";
+@import "spacer/spacer";
+@import "breakpoints/breakpoints";
+@import "partials/partials";

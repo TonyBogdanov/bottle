@@ -1,0 +1,38 @@
+// Dependencies
+@import "../variables/bottle-variables";
+
+// A modular element is a typographical elements such as <h1>, <p>, <strong>, <em> etc.
+// which can be represented both stylisticly and semantically e.g. it's selector can be a class (.h1)
+// And a tag name (h1) inside a .typography wrapper
+// Each such element can also be customized via a CSS mixin in the format: --tag
+
+// $tag - An element tag name, e.g. h1
+@function get-modular-element-selector($tag) {
+  @return ".#{$tag}, .typography #{$tag}";
+}
+
+// $mixin - An element mixin name, usually a tag name, e.g. h1, or headings
+@mixin modular-element-apply-mixin($mixin) {
+  @apply (--#{$mixin});
+}
+
+// $tag - An element tag name, e.g. h1
+@mixin modular-element($tag) {
+  #{get-modular-element-selector($tag)} {
+    @content;
+    @include modular-element-apply-mixin($tag);
+  }
+}
+
+// $tags - A list of element tag names, e.g. (h1, h2, h3)
+// $mixin - A common mixin name for all tags, e.g. headings
+@mixin modular-elements($tags, $mixin) {
+  $selector: ();
+  @each $tag in $tags {
+    $selector: append($selector, get-modular-element-selector($tag), comma);
+  }
+  #{$selector} {
+    @content;
+    @include modular-element-apply-mixin($mixin);
+  }
+}

@@ -1,0 +1,13 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Keyboard
+@mixin kbd() {
+  @include modular-element(kbd) {
+    display: inline-block;
+    white-space: pre-wrap;
+    font-family: monospace;
+
+    @content;
+  }
+}

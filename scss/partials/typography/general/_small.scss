@@ -1,0 +1,12 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Small
+@mixin small() {
+  @include modular-element(small) {
+    display: inline;
+    font-size: 0.75em;
+
+    @content;
+  }
+}

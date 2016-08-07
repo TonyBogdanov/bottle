@@ -1,0 +1,8 @@
+// Dependencies
+@import "../../../modules/modules";
+
+@include p() {
+  font-family: sans-serif;
+
+  @include spacer-collapsible();
+}

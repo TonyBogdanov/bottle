@@ -1,0 +1,21 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Word wraps
+@mixin word-wrap-normal() {
+  word-wrap: normal !important;
+}
+
+@mixin word-wrap-break-word() {
+  word-wrap: break-word !important;
+}
+
+@mixin word-wraps() {
+  .word-wrap-normal {
+    @include word-wrap-normal();
+  }
+
+  .word-wrap-break-word {
+    @include word-wrap-break-word();
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "bottle-tests",
+  "homepage": "https://github.com/TonyBogdanov/bottle",
+  "authors": [
+    "Tony Bogdanov <tonybogdanov@gmail.com>"
+  ],
+  "description": "",
+  "moduleType": [],
+  "license": "MIT",
+  "main": [
+    "index.html"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "private": true,
+  "dependencies": {
+    "polymer": "^1.6.0"
+  }
+}

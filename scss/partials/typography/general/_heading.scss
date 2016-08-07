@@ -1,0 +1,48 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Headings - h1 through h6
+@mixin headings() {
+  @include modular-elements((h1, h2, h3, h4, h5, h6), headings) {
+    display: block;
+    font-weight: bold;
+
+    @content;
+  }
+}
+
+@mixin h1() {
+  @include modular-element(h1) {
+    @content;
+  }
+}
+
+@mixin h2() {
+  @include modular-element(h2) {
+    @content;
+  }
+}
+
+@mixin h3() {
+  @include modular-element(h3) {
+    @content;
+  }
+}
+
+@mixin h4() {
+  @include modular-element(h4) {
+    @content;
+  }
+}
+
+@mixin h5() {
+  @include modular-element(h5) {
+    @content;
+  }
+}
+
+@mixin h6() {
+  @include modular-element(h6) {
+    @content;
+  }
+}

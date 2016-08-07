@@ -1,0 +1,8 @@
+// Dependencies
+@import "../../../mathsass/dist/math";
+
+// Retrieves a type scale value relative to the specified level and factor
+// Useful for determining heading sizes
+@function type-scale($level, $factor: 4 / 3) {
+  @return pow($factor, $level);
+}

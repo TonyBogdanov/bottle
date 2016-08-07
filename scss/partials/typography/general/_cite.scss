@@ -1,0 +1,25 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Citations
+@mixin cite() {
+  @include modular-element(cite) {
+    display: block;
+
+    @content;
+
+    &:not(.text-align-right) {
+      &::before {
+        content: '\2013\00a0';
+        display: inline;
+      }
+    }
+
+    &.text-align-right {
+      &::after {
+        content: '\00a0\2013';
+        display: inline;
+      }
+    }
+  }
+}

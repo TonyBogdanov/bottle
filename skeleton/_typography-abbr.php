@@ -1,0 +1,1 @@
+<p class="p">This is some regular and some <abbr class="abbr" title="Abbreviation">abbreviated</abbr> text.</p>

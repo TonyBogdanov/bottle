@@ -1,0 +1,56 @@
+// Dependencies
+@import "../../variables/grid";
+@import "../../breakpoints/breakpoints";
+
+// Control breakpoint based visibility
+@mixin visibility() {
+  @each $bp in map-keys($breakpoints) {
+    .hidden-#{$bp}-up {
+      @include media-breakpoint-up($bp) {
+        display: none !important;
+      }
+    }
+    .hidden-#{$bp}-down {
+      @include media-breakpoint-down($bp) {
+        display: none !important;
+      }
+    }
+  }
+
+  [class*="visible-"] {
+    display: none;
+
+    @each $bp in map-keys($breakpoints) {
+      &.visible-#{$bp}-up-block {
+        @include media-breakpoint-up($bp) {
+          display: block !important;
+        }
+      }
+      &.visible-#{$bp}-up-inline {
+        @include media-breakpoint-up($bp) {
+          display: inline !important;
+        }
+      }
+      &.visible-#{$bp}-up-inline-block {
+        @include media-breakpoint-up($bp) {
+          display: inline-block !important;
+        }
+      }
+      &.visible-#{$bp}-down-block {
+        @include media-breakpoint-down($bp) {
+          display: block !important;
+        }
+      }
+      &.visible-#{$bp}-down-inline {
+        @include media-breakpoint-down($bp) {
+          display: inline !important;
+        }
+      }
+      &.visible-#{$bp}-down-inline-block {
+        @include media-breakpoint-down($bp) {
+          display: inline-block !important;
+        }
+      }
+    }
+  }
+}

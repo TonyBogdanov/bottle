@@ -1,0 +1,6 @@
+// Dependencies
+@import "../../modules/modules";
+
+.clearfix {
+  @include clearfix();
+}

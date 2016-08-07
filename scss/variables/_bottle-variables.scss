@@ -1,8 +1,15 @@
 // List of all variables used by bottle
 $bottle-variables:            (
-        base-size:            (description: "Set the base size for the entire HTML document in pixels, e.g. 16px.
+        base-size: (description: "Set the base size for the entire HTML document in pixels, e.g. 16px.
 All relative units and all conversions will be based on this value."),
 
+        base-line-height: (description: "Set the default line height for the entire HTML document.
+Preferably use unitless numbers."),
+
+        spacer: (description: "Set a spacer margin that will be applied with the spacer() mixin."),
+        spacer-collapse: (description: "Set a spacer margin that will override the default margin for collapsible siblings."),
+
+        collapsible-elements: (description: "Define a list of modular elements (tags) which are to be collapsed if they appear as siblings.")
 
 ) !default; // Use !default to avoid double imports overwrites
 

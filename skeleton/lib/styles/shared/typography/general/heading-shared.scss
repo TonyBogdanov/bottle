@@ -1,0 +1,33 @@
+// Dependencies
+@import "../../../modules/modules";
+
+@include headings() {
+  font-family: serif;
+  line-height: 1;
+
+  @include spacer-collapsible();
+}
+
+@include h1() {
+  font-size: set-unit(type-scale(4), em);
+}
+
+@include h2() {
+  font-size: set-unit(type-scale(3), em);
+}
+
+@include h3() {
+  font-size: set-unit(type-scale(2), em);
+}
+
+@include h4() {
+  font-size: set-unit(type-scale(1), em);
+}
+
+@include h5() {
+  font-size: set-unit(type-scale(0), em);
+}
+
+@include h6() {
+  font-size: set-unit(type-scale(-1), em);
+}

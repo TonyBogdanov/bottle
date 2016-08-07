@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Abbr
+@mixin abbr() {
+  @include modular-element(abbr) {
+    display: inline;
+
+    @content;
+  }
+}

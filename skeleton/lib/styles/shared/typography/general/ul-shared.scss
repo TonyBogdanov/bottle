@@ -1,0 +1,18 @@
+// Dependencies
+@import "../../../modules/modules";
+
+@include ul() {
+  font-family: sans-serif;
+  list-style-type: disc;
+  padding-left: 2em;
+
+  @include spacer-collapsible();
+
+  #{get-modular-element-selector(ol)} {
+    @include counter-spacer();
+  }
+
+  #{get-modular-element-selector(ul)} {
+    @include counter-spacer();
+  }
+}

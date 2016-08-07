@@ -1,0 +1,15 @@
+// Dependencies
+@import "../../../modules/modules";
+
+@include dl() {
+  @include spacer-collapsible();
+
+  @include dt() {
+    font-weight: 700;
+  }
+
+  @include dd() {
+    font-style: italic;
+    margin-left: 1em;
+  }
+}

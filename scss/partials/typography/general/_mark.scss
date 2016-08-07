@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Mark
+@mixin mark() {
+  @include modular-element(mark) {
+    display: inline-block;
+
+    @content;
+  }
+}

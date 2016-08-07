@@ -1,0 +1,10 @@
+// Dependencies
+@import "../../../modules/modules";
+
+@include hr() {
+  height: px(1);
+  border: 0;
+  background: #eee;
+
+  @include spacer();
+}

@@ -1,0 +1,1 @@
+.abbr,.typography abbr{display:inline;@apply (--abbr)}.abbr[title],.typography abbr[title]{border-bottom:.07143em dotted;cursor:help}

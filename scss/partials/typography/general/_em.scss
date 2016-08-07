@@ -1,0 +1,12 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Emphasis
+@mixin em() {
+  @include modular-element(em) {
+    display: inline;
+    font-style: italic;
+
+    @content;
+  }
+}

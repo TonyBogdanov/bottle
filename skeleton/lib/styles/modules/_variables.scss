@@ -1,0 +1,24 @@
+// Dependencies
+@import "../../../../bower_components/bottle/scss/variables/bottle-variables";
+
+// Bottle variables
+@include bottle-set('base-size', 14px);
+@include bottle-set('base-line-height', 1.5);
+@include bottle-set('spacer', 3rem);
+@include bottle-set('spacer-collapse', 1rem);
+@include bottle-set('collapsible-elements', (
+        unquote('.row'),
+        h1, unquote('.h1'),
+        h2, unquote('.h2'),
+        h3, unquote('.h3'),
+        h4, unquote('.h4'),
+        h5, unquote('.h5'),
+        h6, unquote('.h6'),
+        p, unquote('.p'),
+        cite, unquote('.cite'),
+        blockquote, unquote('.blockquote'),
+        pre, unquote('.pre'),
+        dl, unquote('.dl'),
+        ol, unquote('.ol'),
+        ul, unquote('.ul')
+));

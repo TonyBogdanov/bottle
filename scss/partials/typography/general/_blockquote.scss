@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Blockquotes
+@mixin blockquote() {
+  @include modular-element(cite) {
+    display: block;
+
+    @content;
+  }
+}

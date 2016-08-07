@@ -1,0 +1,27 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Definition List
+@mixin dl() {
+  @include modular-element(dl) {
+    display: block;
+
+    @content;
+  }
+}
+
+@mixin dt() {
+  @include modular-element(dt) {
+    display: block;
+
+    @content;
+  }
+}
+
+@mixin dd() {
+  @include modular-element(dd) {
+    display: block;
+
+    @content;
+  }
+}

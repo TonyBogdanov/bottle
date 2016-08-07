@@ -1,0 +1,29 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Text transform
+@mixin text-transform-none() {
+  text-transform: none !important;
+}
+
+@mixin text-transform-uppercase() {
+  text-transform: uppercase !important;
+}
+
+@mixin text-transform-lowercase() {
+  text-transform: lowercase !important;
+}
+
+@mixin text-transforms() {
+  .text-transform-none {
+    @include text-transform-none();
+  }
+
+  .text-transform-uppercase {
+    @include text-transform-uppercase();
+  }
+
+  .text-transform-lowercase {
+    @include text-transform-lowercase();
+  }
+}

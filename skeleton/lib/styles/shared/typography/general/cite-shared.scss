@@ -1,0 +1,8 @@
+// Dependencies
+@import "../../../modules/modules";
+
+@include cite() {
+  font-family: sans-serif;
+
+  @include spacer-collapsible();
+}

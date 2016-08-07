@@ -1,0 +1,9 @@
+// Dependencies
+@import "../../../modules/modules";
+
+@include abbr() {
+  &[title] {
+    border-bottom: px(1) dotted;
+    cursor: help;
+  }
+}

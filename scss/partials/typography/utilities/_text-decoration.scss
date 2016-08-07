@@ -1,0 +1,37 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Text decoration
+@mixin text-decoration-none() {
+  text-decoration: none !important;
+}
+
+@mixin text-decoration-underline() {
+  text-decoration: underline !important;
+}
+
+@mixin text-decoration-overline() {
+  text-decoration: overline !important;
+}
+
+@mixin text-decoration-line-through() {
+  text-decoration: line-through !important;
+}
+
+@mixin text-decorations() {
+  .text-decoration-none {
+    @include text-decoration-none();
+  }
+
+  .text-decoration-underline {
+    @include text-decoration-underline();
+  }
+
+  .text-decoration-overline {
+    @include text-decoration-overline();
+  }
+
+  .text-decoration-line-through {
+    @include text-decoration-line-through();
+  }
+}

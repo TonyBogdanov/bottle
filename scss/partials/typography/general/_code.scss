@@ -1,0 +1,13 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Code
+@mixin code() {
+  @include modular-element(code) {
+    display: inline-block;
+    white-space: pre-wrap;
+    font-family: monospace;
+
+    @content;
+  }
+}

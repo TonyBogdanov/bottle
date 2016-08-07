@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Ordered List
+@mixin ol() {
+  @include modular-element(ol) {
+    display: block;
+
+    @content;
+  }
+}

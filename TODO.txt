@@ -6,7 +6,6 @@ Add tags:
 <audio>	Defines sound content
 <bdi>	Isolates a part of text that might be formatted in a different direction from other text outside it
 <bdo>	Overrides the current text direction
-<button>	Defines a clickable button
 <canvas>	Used to draw graphics, on the fly, via scripting (usually JavaScript)
 <caption>	Defines a table caption
 <col>	Specifies column properties for each column within a <colgroup> element
@@ -17,25 +16,19 @@ Add tags:
 <dfn>	Represents the defining instance of a term
 <dialog>	Defines a dialog box or window
 <embed>	Defines a container for an external (non-HTML) application
-<fieldset>	Groups related elements in a form
 <figcaption>	Defines a caption for a <figure> element
 <figure>	Specifies self-contained content
 <footer>	Defines a footer for a document or section
-<form>	Defines an HTML form for user input
 <header>	Defines a header for a document or section
 <iframe>	Defines an inline frame
-<input>	Defines an input control
 <ins>	Defines a text that has been inserted into a document
 <keygen>	Defines a key-pair generator field (for forms)
-<label>	Defines a label for an <input> element
 <legend>	Defines a caption for a <fieldset> element
 <main>	Specifies the main content of a document
 <menu>	Defines a list/menu of commands
 <menuitem>	Defines a command/menu item that the user can invoke from a popup menu
 <meter>	Defines a scalar measurement within a known range (a gauge)
 <nav>	Defines navigation links
-<optgroup>	Defines a group of related options in a drop-down list
-<option>	Defines an option in a drop-down list
 <output>	Defines the result of a calculation
 <progress>	Represents the progress of a task
 <q>	Defines a short quotation
@@ -44,7 +37,6 @@ Add tags:
 <ruby>	Defines a ruby annotation (for East Asian typography)
 <samp>	Defines sample output from a computer program
 <section>	Defines a section in a document
-<select>	Defines a drop-down list
 <source>	Defines multiple media resources for media elements (<video> and <audio>)
 <span>	Defines a section in a document
 <sub>	Defines subscripted text

@@ -3,15 +3,15 @@
 @import "../../breakpoints/breakpoints";
 
 // Pulls to float content
-@mixin pull-left {
+@mixin pull-left() {
   float: left !important;
 }
 
-@mixin pull-right {
+@mixin pull-right() {
   float: right !important;
 }
 
-@mixin pull-none {
+@mixin pull-none() {
   float: none !important;
 }
 

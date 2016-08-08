@@ -8,6 +8,7 @@
 @include bottle-set('spacer-collapse', 1rem);
 @include bottle-set('collapsible-elements', (
         unquote('.row'),
+
         h1, unquote('.h1'),
         h2, unquote('.h2'),
         h3, unquote('.h3'),
@@ -20,5 +21,13 @@
         pre, unquote('.pre'),
         dl, unquote('.dl'),
         ol, unquote('.ol'),
-        ul, unquote('.ul')
+        ul, unquote('.ul'),
+
+        input,
+        textarea,
+        button,
+        select,
+        option,
+        optgroup,
+        label
 ));

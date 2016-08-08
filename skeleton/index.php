@@ -86,6 +86,7 @@ function demoBlock($name, $title) {
     demoBlock('typography-ol', 'Typography / Ordered List');
     demoBlock('typography-ul', 'Typography / Unordered List');
     demoBlock('typography-ol-ul', 'Typography / Mixed List');
+    demoBlock('form', 'Form & Form Elements');
     demoBlock('utilities-text-decoration', 'Utilities / Text Decoration');
     demoBlock('utilities-text-transform', 'Utilities / Text Transform');
     demoBlock('utilities-text-align', 'Utilities / Text Align');

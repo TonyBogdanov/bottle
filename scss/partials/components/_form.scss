@@ -1,0 +1,84 @@
+// Dependencies
+@import "../../modular/element";
+
+// Form & form elements
+@mixin form() {
+  form {
+    display: block;
+
+    @content;
+    @include modular-element-apply-mixin(form);
+  }
+}
+
+@mixin input() {
+  input {
+    display: block;
+
+    @content;
+    @include modular-element-apply-mixin(input);
+  }
+}
+
+@mixin textarea() {
+  textarea {
+    display: block;
+
+    @content;
+    @include modular-element-apply-mixin(textarea);
+  }
+}
+
+@mixin button() {
+  button {
+    display: block;
+
+    @content;
+    @include modular-element-apply-mixin(button);
+  }
+}
+
+@mixin select() {
+  select {
+    display: block;
+
+    @content;
+    @include modular-element-apply-mixin(select);
+  }
+}
+
+@mixin option() {
+  option {
+    display: block;
+
+    @content;
+    @include modular-element-apply-mixin(option);
+  }
+}
+
+@mixin optgroup() {
+  optgroup {
+    display: block;
+
+    @content;
+    @include modular-element-apply-mixin(optgroup);
+  }
+}
+
+@mixin fieldset() {
+  fieldset {
+    display: block;
+
+    @content;
+    @include modular-element-apply-mixin(fieldset);
+  }
+}
+
+@mixin label() {
+  label {
+    display: block;
+
+    @content;
+    @include modular-element-apply-mixin(label);
+  }
+}

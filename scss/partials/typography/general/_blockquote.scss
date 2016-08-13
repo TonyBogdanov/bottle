@@ -3,7 +3,7 @@
 
 // Blockquotes
 @mixin blockquote() {
-  @include modular-element(cite) {
+  @include modular-element(blockquote) {
     display: block;
 
     @content;

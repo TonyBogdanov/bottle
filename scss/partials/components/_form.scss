@@ -29,15 +29,6 @@
   }
 }
 
-@mixin button() {
-  button {
-    display: block;
-
-    @content;
-    @include modular-element-apply-mixin(button);
-  }
-}
-
 @mixin select() {
   select {
     display: block;
@@ -71,14 +62,5 @@
 
     @content;
     @include modular-element-apply-mixin(fieldset);
-  }
-}
-
-@mixin label() {
-  label {
-    display: block;
-
-    @content;
-    @include modular-element-apply-mixin(label);
   }
 }

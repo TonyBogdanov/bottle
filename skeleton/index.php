@@ -75,6 +75,8 @@ function demoBlock($name, $title) {
     demoBlock('typography-pre', 'Typography / Preformatted');
     demoBlock('typography-hr', 'Typography / Horizontal Rule');
     demoBlock('typography-a', 'Typography / Anchor');
+    demoBlock('typography-button', 'Typography / Button');
+    demoBlock('typography-label', 'Typography / Label');
     demoBlock('typography-strong', 'Typography / Strong');
     demoBlock('typography-em', 'Typography / Italic');
     demoBlock('typography-small', 'Typography / Small');

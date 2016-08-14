@@ -17,12 +17,6 @@
   @include spacer-collapsible();
 }
 
-@include button() {
-  font-family: sans-serif;
-
-  @include spacer-collapsible();
-}
-
 @include select() {
   font-family: sans-serif;
 
@@ -36,12 +30,6 @@
 }
 
 @include optgroup() {
-  font-family: sans-serif;
-
-  @include spacer-collapsible();
-}
-
-@include label() {
   font-family: sans-serif;
 
   @include spacer-collapsible();

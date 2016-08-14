@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Button
+@mixin button() {
+  @include modular-element(button) {
+    display: block;
+
+    @content;
+  }
+}

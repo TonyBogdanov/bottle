@@ -11,6 +11,4 @@
     <fieldset>
         <p class="p">A fieldset (not collapsible)</p>
     </fieldset>
-    <label>A label</label>
-    <button type="button">A button</button>
 </form>

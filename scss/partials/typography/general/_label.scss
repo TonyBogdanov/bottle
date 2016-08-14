@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Label
+@mixin label() {
+  @include modular-element(label) {
+    display: block;
+
+    @content;
+  }
+}

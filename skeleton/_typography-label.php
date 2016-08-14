@@ -1,0 +1,1 @@
+<label class="label">This is a label</label>

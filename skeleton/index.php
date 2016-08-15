@@ -91,12 +91,14 @@ function demoBlock($name, $title) {
     demoBlock('form', 'Form & Form Elements');
     demoBlock('utilities-text-decoration', 'Utilities / Text Decoration');
     demoBlock('utilities-text-transform', 'Utilities / Text Transform');
-    demoBlock('utilities-text-align', 'Utilities / Text Align');
+    demoBlock('utilities-align', 'Utilities / Alignment');
     demoBlock('grid-containers', 'Grid / Containers');
     demoBlock('grid-columns', 'Grid / Columns');
     demoBlock('clearfix', 'Clearfix');
     demoBlock('pulls', 'Pulls');
     demoBlock('visibility', 'Visibility');
+    demoBlock('display', 'Display');
+    demoBlock('position', 'Positioning');
     ?>
 </div>
 

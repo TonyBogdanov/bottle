@@ -1,0 +1,46 @@
+// Dependencies
+@import "../../breakpoints/breakpoints";
+
+// Display helpers
+@mixin display-inline() {
+  display: inline !important;
+}
+
+@mixin display-block() {
+  display: block !important;
+}
+
+@mixin display-inline-block() {
+  display: inline-block !important;
+}
+
+@mixin displays() {
+  .display-inline {
+    @include display-inline();
+  }
+
+  .display-block {
+    @include display-block();
+  }
+
+  .display-inline-block {
+    @include display-inline-block();
+  }
+}
+
+// Responsive display helpers
+@mixin responsive-displays() {
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      .display-#{$breakpoint}-inline {
+        @include display-inline();
+      }
+      .display-#{$breakpoint}-block {
+        @include display-block();
+      }
+      .display-#{$breakpoint}-inline-block {
+        @include display-inline-block();
+      }
+    }
+  }
+}

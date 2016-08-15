@@ -1,0 +1,50 @@
+// Dependencies
+@import "../../modular/element";
+@import "../../breakpoints/breakpoints";
+
+// Block aligns
+@mixin block-align-left() {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+@mixin block-align-center() {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@mixin block-align-right() {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+@mixin block-aligns() {
+  .block-align-left {
+    @include block-align-left();
+  }
+
+  .block-align-center {
+    @include block-align-center();
+  }
+
+  .block-align-right {
+    @include block-align-right();
+  }
+}
+
+// Responsive block aligns
+@mixin responsive-block-aligns() {
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      .block-#{$breakpoint}-left {
+        @include block-align-left();
+      }
+      .block-#{$breakpoint}-center {
+        @include block-align-center();
+      }
+      .block-#{$breakpoint}-right {
+        @include block-align-right();
+      }
+    }
+  }
+}

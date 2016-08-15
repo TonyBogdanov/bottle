@@ -1,0 +1,103 @@
+// Dependencies
+@import "../../../modular/element";
+@import "../../../breakpoints/breakpoints";
+
+// Text aligns
+@mixin text-align-left() {
+  text-align: left !important;
+}
+
+@mixin text-align-center() {
+  text-align: center !important;
+}
+
+@mixin text-align-right() {
+  text-align: right !important;
+}
+
+@mixin text-align-justify() {
+  text-align: justify !important;
+}
+
+@mixin text-aligns() {
+  .text-align-left {
+    @include text-align-left();
+  }
+
+  .text-align-center {
+    @include text-align-center();
+  }
+
+  .text-align-right {
+    @include text-align-right();
+  }
+
+  .text-align-justify {
+    @include text-align-justify();
+  }
+}
+
+// Responsive text aligns
+@mixin responsive-text-aligns() {
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      .text-#{$breakpoint}-left {
+        @include text-align-left();
+      }
+      .text-#{$breakpoint}-center {
+        @include text-align-center();
+      }
+      .text-#{$breakpoint}-right {
+        @include text-align-right();
+      }
+      .text-#{$breakpoint}-justify {
+        @include text-align-justify();
+      }
+    }
+  }
+}
+
+// Block aligns
+@mixin block-align-left() {
+  margin-right: auto !important;
+}
+
+@mixin block-align-center() {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@mixin block-align-right() {
+  margin-left: auto !important;
+}
+
+@mixin block-aligns() {
+  .block-align-left {
+    @include block-align-left();
+  }
+
+  .block-align-center {
+    @include block-align-center();
+  }
+
+  .block-align-right {
+    @include block-align-right();
+  }
+}
+
+// Responsive block aligns
+@mixin responsive-block-aligns() {
+  @each $breakpoint in map-keys($breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      .block-#{$breakpoint}-left {
+        @include block-align-left();
+      }
+      .block-#{$breakpoint}-center {
+        @include block-align-center();
+      }
+      .block-#{$breakpoint}-right {
+        @include block-align-right();
+      }
+    }
+  }
+}

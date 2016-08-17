@@ -31,4 +31,8 @@
   .spacer-block {
     @include spacer-block();
   }
+
+  .counter-spacer-block {
+    @include counter-spacer-block();
+  }
 }

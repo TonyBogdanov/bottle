@@ -10,8 +10,6 @@
   margin-right: auto;
   padding-left: ($gutter / 2);
   padding-right: ($gutter / 2);
-
-  @include clearfix();
 }
 
 @mixin container() {
@@ -43,15 +41,15 @@
 }
 
 @mixin row() {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: ($gutter / -2);
   margin-right: ($gutter / -2);
-
-  @include clearfix();
 }
 
 @mixin col($size) {
-  float: left;
-  width: percentage($size / $columns);
+  flex: 0 0 percentage($size / $columns);
+  max-width: percentage($size / $columns);
 }
 
 @mixin col-offset($offset) {
@@ -60,6 +58,7 @@
 
 @mixin grid() {
   %grid-column {
+    width: 100%;
     position: relative;
     min-height: 1px;
     padding-right: ($gutter / 2);
@@ -69,6 +68,16 @@
   $breakpoint-counter: 0;
   @each $breakpoint in map-keys($breakpoints) {
     $breakpoint-counter: ($breakpoint-counter + 1);
+
+    .col-#{$breakpoint} {
+      position: relative;
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+      min-height: 1px;
+      padding-right: ($gutter / 2);
+      padding-left: ($gutter / 2);
+    }
 
     @for $i from 1 through $columns {
       .col-#{$breakpoint}-#{$i} {

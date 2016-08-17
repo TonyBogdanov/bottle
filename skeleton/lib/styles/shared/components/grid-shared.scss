@@ -13,11 +13,6 @@
 
 .row {
   @include row();
-  @include spacer-collapsible();
-}
-
-[class*="col-"] {
-  @include spacer-block();
 }
 
 @include grid();

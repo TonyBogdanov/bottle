@@ -18,7 +18,7 @@
   }
 
   [class*="visible-"] {
-    display: none;
+    display: none !important;
 
     @each $bp in map-keys($breakpoints) {
       &.visible-#{$bp}-up-block {

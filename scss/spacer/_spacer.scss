@@ -71,7 +71,7 @@
 @mixin collapsible() {
   $selectors: ();
   @each $selector in bottle-get('collapsible-elements') {
-    $selectors: append($selectors, unquote('& + #{$selector}'), comma);
+    $selectors: append($selectors, unquote('& + #{$selector}:not(.no-collapse)'), comma);
   }
   #{$selectors} {
     margin-top: get-spacer-collapse() - get-spacer();
@@ -80,7 +80,7 @@
 @mixin counter-collapsible() {
   $selectors: ();
   @each $selector in bottle-get('collapsible-elements') {
-    $selectors: append($selectors, unquote('& + #{$selector}'), comma);
+    $selectors: append($selectors, unquote('& + #{$selector}:not(.no-collapse)'), comma);
   }
   #{$selectors} {
     margin-top: 0;

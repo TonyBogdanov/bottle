@@ -1,0 +1,34 @@
+// Dependencies
+@import "../../modular/element";
+@import "../../spacer/spacer";
+
+// Spacer helper classes
+@mixin spacers() {
+  .spacer {
+    @include spacer();
+  }
+
+  .counter-spacer {
+    @include counter-spacer();
+  }
+
+  .collapsible {
+    @include collapsible();
+  }
+
+  .counter-collapsible {
+    @include counter-collapsible();
+  }
+
+  .spacer-collapsible {
+    @include spacer-collapsible();
+  }
+
+  .counter-spacer-collapsible {
+    @include counter-spacer-collapsible();
+  }
+
+  .spacer-block {
+    @include spacer-block();
+  }
+}

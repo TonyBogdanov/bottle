@@ -7,6 +7,7 @@
 @include bottle-set('spacer', 3rem);
 @include bottle-set('spacer-collapse', 1rem);
 @include bottle-set('collapsible-elements', (
+        unquote('.collapsible'), unquote('.spacer-collapsible'),
         unquote('.row'),
 
         h1, unquote('.h1'),

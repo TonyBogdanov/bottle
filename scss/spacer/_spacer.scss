@@ -60,10 +60,28 @@
 
 // Apply spacer margins
 @mixin spacer() {
-  margin-bottom: get-spacer();
+  margin-bottom: get-spacer() !important;
+}
+@mixin spacer-fourth() {
+  margin-bottom: get-spacer-fourth() !important;
+}
+@mixin spacer-third() {
+  margin-bottom: get-spacer-third() !important;
+}
+@mixin spacer-half() {
+  margin-bottom: get-spacer-half() !important;
+}
+@mixin spacer-double() {
+  margin-bottom: get-spacer-double() !important;
+}
+@mixin spacer-triple() {
+  margin-bottom: get-spacer-triple() !important;
+}
+@mixin spacer-quadruple() {
+  margin-bottom: get-spacer-quadruple() !important;
 }
 @mixin counter-spacer() {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 // Adjusts the top margin to account for collapsible siblings

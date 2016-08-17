@@ -8,6 +8,30 @@
     @include spacer();
   }
 
+  .spacer-fourth {
+    @include spacer-fourth();
+  }
+
+  .spacer-third {
+    @include spacer-third();
+  }
+
+  .spacer-half {
+    @include spacer-half();
+  }
+
+  .spacer-double {
+    @include spacer-double();
+  }
+
+  .spacer-triple {
+    @include spacer-triple();
+  }
+
+  .spacer-quadruple {
+    @include spacer-quadruple();
+  }
+
   .counter-spacer {
     @include counter-spacer();
   }

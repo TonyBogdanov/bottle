@@ -1,0 +1,1 @@
+.q,.typography q{display:inline;quotes:"\201C" "\201D" "\2018" "\2019";@apply (--q)}.q::before,.typography q::before{content:open-quote}.q::after,.typography q::after{content:close-quote}

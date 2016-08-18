@@ -1,0 +1,20 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Quotes
+@mixin q() {
+  @include modular-element(q) {
+    display: inline;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+
+    @content;
+
+    &::before {
+      content: open-quote;
+    }
+
+    &::after {
+      content: close-quote;
+    }
+  }
+}

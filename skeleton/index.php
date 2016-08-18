@@ -79,6 +79,7 @@ function demoBlock($name, $title) {
     demoBlock('typography-label', 'Typography / Label');
     demoBlock('typography-strong', 'Typography / Strong');
     demoBlock('typography-em', 'Typography / Italic');
+    demoBlock('typography-q', 'Typography / Quoted');
     demoBlock('typography-small', 'Typography / Small');
     demoBlock('typography-mark', 'Typography / Mark');
     demoBlock('typography-abbr', 'Typography / Abbreviation');

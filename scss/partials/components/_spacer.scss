@@ -31,6 +31,33 @@
   .spacer-quadruple {
     @include spacer-quadruple();
   }
+  .spacer-collapse {
+    @include spacer-collapse();
+  }
+
+  .spacer-collapse-fourth {
+    @include spacer-collapse-fourth();
+  }
+
+  .spacer-collapse-third {
+    @include spacer-collapse-third();
+  }
+
+  .spacer-collapse-half {
+    @include spacer-collapse-half();
+  }
+
+  .spacer-collapse-double {
+    @include spacer-collapse-double();
+  }
+
+  .spacer-collapse-triple {
+    @include spacer-collapse-triple();
+  }
+
+  .spacer-collapse-quadruple {
+    @include spacer-collapse-quadruple();
+  }
 
   .counter-spacer {
     @include counter-spacer();

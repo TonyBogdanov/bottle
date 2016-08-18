@@ -80,6 +80,27 @@
 @mixin spacer-quadruple() {
   margin-bottom: get-spacer-quadruple() !important;
 }
+@mixin spacer-collapse() {
+  margin-bottom: get-spacer-collapse() !important;
+}
+@mixin spacer-collapse-fourth() {
+  margin-bottom: get-spacer-collapse-fourth() !important;
+}
+@mixin spacer-collapse-third() {
+  margin-bottom: get-spacer-collapse-third() !important;
+}
+@mixin spacer-collapse-half() {
+  margin-bottom: get-spacer-collapse-half() !important;
+}
+@mixin spacer-collapse-double() {
+  margin-bottom: get-spacer-collapse-double() !important;
+}
+@mixin spacer-collapse-triple() {
+  margin-bottom: get-spacer-collapse-triple() !important;
+}
+@mixin spacer-collapse-quadruple() {
+  margin-bottom: get-spacer-collapse-quadruple() !important;
+}
 @mixin counter-spacer() {
   margin-bottom: 0 !important;
 }

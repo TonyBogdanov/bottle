@@ -6,23 +6,20 @@ An extended collection of useful tools and snippets to help you quickly bootstra
 
 - [Bourbon](http://bourbon.io)
 - [MathSass](https://github.com/terkel/mathsass)
-- [Bootstrap 4](http://getbootstrap.com)
 
-This is really just a private project, but if you find any part of it useful, feel free to use it any way you want.
-
-The main goal is to speedup the process of building [Polymer](https://polymer-project.org) based projects via a [Modular CSS](http://thesassway.com/advanced/modular-css-typography) approach.
+Use bottle to speedup the process of building [Polymer](https://polymer-project.org) based projects via a [Modular CSS](http://thesassway.com/advanced/modular-css-typography) approach.
 
 ## Installation
 
-To install you'll need [Bower](http://bower.io). Once you do, just run:
+To install you'll need [Bower](http://bower.io). Once you do, run:
 
 ```shell
 bower install --save bottle
 ```
 
-And you're done.
-
 ## Usage
+
+Explore and use `skeleton` as the base of your project, or...
 
 To use bottle's mixins and variables (produces no CSS):
 
@@ -43,3 +40,5 @@ To bootstrap your project (produces CSS):
 
 @import "bower_components/bottle/scss/bootstrap";
 ```
+
+Various helper classes are available as [Polymer](https://polymer-project.org) [style modules](https://www.polymer-project.org/1.0/docs/devguide/styling#style-modules) under `skeleton/lib/styles/shared`.

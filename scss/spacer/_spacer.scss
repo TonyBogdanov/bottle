@@ -59,50 +59,50 @@
 }
 
 // Apply spacer margins
-@mixin spacer() {
-  margin-bottom: get-spacer() !important;
+@mixin spacer($important: false) {
+  margin-bottom: if($important, get-spacer() !important, get-spacer());
 }
-@mixin spacer-fourth() {
-  margin-bottom: get-spacer-fourth() !important;
+@mixin spacer-fourth($important: false) {
+  margin-bottom: if($important, get-spacer-fourth() !important, get-spacer-fourth());
 }
-@mixin spacer-third() {
-  margin-bottom: get-spacer-third() !important;
+@mixin spacer-third($important: false) {
+  margin-bottom: if($important, get-spacer-third() !important, get-spacer-third());
 }
-@mixin spacer-half() {
-  margin-bottom: get-spacer-half() !important;
+@mixin spacer-half($important: false) {
+  margin-bottom: if($important, get-spacer-half() !important, get-spacer-half());
 }
-@mixin spacer-double() {
-  margin-bottom: get-spacer-double() !important;
+@mixin spacer-double($important: false) {
+  margin-bottom: if($important, get-spacer-double() !important, get-spacer-double());
 }
-@mixin spacer-triple() {
-  margin-bottom: get-spacer-triple() !important;
+@mixin spacer-triple($important: false) {
+  margin-bottom: if($important, get-spacer-triple() !important, get-spacer-triple());
 }
-@mixin spacer-quadruple() {
-  margin-bottom: get-spacer-quadruple() !important;
+@mixin spacer-quadruple($important: false) {
+  margin-bottom: if($important, get-spacer-quadruple() !important, get-spacer-quadruple());
 }
-@mixin spacer-collapse() {
-  margin-bottom: get-spacer-collapse() !important;
+@mixin spacer-collapse($important: false) {
+  margin-bottom: if($important, get-spacer-collapse() !important, get-spacer-collapse());
 }
-@mixin spacer-collapse-fourth() {
-  margin-bottom: get-spacer-collapse-fourth() !important;
+@mixin spacer-collapse-fourth($important: false) {
+  margin-bottom: if($important, get-spacer-collapse-fourth() !important, get-spacer-collapse-fourth());
 }
-@mixin spacer-collapse-third() {
-  margin-bottom: get-spacer-collapse-third() !important;
+@mixin spacer-collapse-third($important: false) {
+  margin-bottom: if($important, get-spacer-collapse-third() !important, get-spacer-collapse-third());
 }
-@mixin spacer-collapse-half() {
-  margin-bottom: get-spacer-collapse-half() !important;
+@mixin spacer-collapse-half($important: false) {
+  margin-bottom: if($important, get-spacer-collapse-half() !important, get-spacer-collapse-half());
 }
-@mixin spacer-collapse-double() {
-  margin-bottom: get-spacer-collapse-double() !important;
+@mixin spacer-collapse-double($important: false) {
+  margin-bottom: if($important, get-spacer-collapse-double() !important, get-spacer-collapse-double());
 }
-@mixin spacer-collapse-triple() {
-  margin-bottom: get-spacer-collapse-triple() !important;
+@mixin spacer-collapse-triple($important: false) {
+  margin-bottom: if($important, get-spacer-collapse-triple() !important, get-spacer-collapse-triple());
 }
-@mixin spacer-collapse-quadruple() {
-  margin-bottom: get-spacer-collapse-quadruple() !important;
+@mixin spacer-collapse-quadruple($important: false) {
+  margin-bottom: if($important, get-spacer-collapse-quadruple() !important, get-spacer-collapse-quadruple());
 }
-@mixin counter-spacer() {
-  margin-bottom: 0 !important;
+@mixin counter-spacer($important: false) {
+  margin-bottom: if($important, 0 !important, 0);
 }
 
 // Adjusts the top margin to account for collapsible siblings
@@ -127,12 +127,12 @@
 }
 
 // A shorthand combination for spacer() and collapsible()
-@mixin spacer-collapsible() {
-  @include spacer();
+@mixin spacer-collapsible($important: false) {
+  @include spacer($important);
   @include collapsible();
 }
-@mixin counter-spacer-collapsible() {
-  @include counter-spacer();
+@mixin counter-spacer-collapsible($important: false) {
+  @include counter-spacer($important);
   @include counter-collapsible();
 }
 

@@ -5,62 +5,62 @@
 // Spacer helper classes
 @mixin spacers() {
   .spacer {
-    @include spacer();
+    @include spacer(true);
   }
 
   .spacer-fourth {
-    @include spacer-fourth();
+    @include spacer-fourth(true);
   }
 
   .spacer-third {
-    @include spacer-third();
+    @include spacer-third(true);
   }
 
   .spacer-half {
-    @include spacer-half();
+    @include spacer-half(true);
   }
 
   .spacer-double {
-    @include spacer-double();
+    @include spacer-double(true);
   }
 
   .spacer-triple {
-    @include spacer-triple();
+    @include spacer-triple(true);
   }
 
   .spacer-quadruple {
-    @include spacer-quadruple();
+    @include spacer-quadruple(true);
   }
   .spacer-collapse {
-    @include spacer-collapse();
+    @include spacer-collapse(true);
   }
 
   .spacer-collapse-fourth {
-    @include spacer-collapse-fourth();
+    @include spacer-collapse-fourth(true);
   }
 
   .spacer-collapse-third {
-    @include spacer-collapse-third();
+    @include spacer-collapse-third(true);
   }
 
   .spacer-collapse-half {
-    @include spacer-collapse-half();
+    @include spacer-collapse-half(true);
   }
 
   .spacer-collapse-double {
-    @include spacer-collapse-double();
+    @include spacer-collapse-double(true);
   }
 
   .spacer-collapse-triple {
-    @include spacer-collapse-triple();
+    @include spacer-collapse-triple(true);
   }
 
   .spacer-collapse-quadruple {
-    @include spacer-collapse-quadruple();
+    @include spacer-collapse-quadruple(true);
   }
 
   .counter-spacer {
-    @include counter-spacer();
+    @include counter-spacer(true);
   }
 
   .collapsible {
@@ -72,11 +72,11 @@
   }
 
   .spacer-collapsible {
-    @include spacer-collapsible();
+    @include spacer-collapsible(true);
   }
 
   .counter-spacer-collapsible {
-    @include counter-spacer-collapsible();
+    @include counter-spacer-collapsible(true);
   }
 
   .spacer-block {

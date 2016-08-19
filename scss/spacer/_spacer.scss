@@ -142,6 +142,7 @@
   &::after {
     content: '';
     display: block;
+    min-height: 0.01px; // force avoid margin collapsing (only compensate children, but not parent)
     margin-top: -1 * get-spacer();
   }
 }

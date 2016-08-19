@@ -1,0 +1,46 @@
+// Dependencies
+@import "../../variables/grid";
+@import "../../breakpoints/breakpoints";
+
+// Content overflow
+@mixin overflow-initial() {
+  overflow: initial !important;
+}
+
+@mixin overflow-visible() {
+  overflow: visible !important;
+}
+
+@mixin overflow-hidden() {
+  overflow: hidden !important;
+}
+
+@mixin overflow-scroll() {
+  overflow: scroll !important;
+}
+
+@mixin overflow-auto() {
+  overflow: auto !important;
+}
+
+@mixin overflows() {
+  .overflow-initial {
+    @include overflow-initial();
+  }
+
+  .overflow-visible {
+    @include overflow-visible();
+  }
+
+  .overflow-hidden {
+    @include overflow-hidden();
+  }
+
+  .overflow-scroll {
+    @include overflow-scroll();
+  }
+
+  .overflow-auto {
+    @include overflow-auto();
+  }
+}

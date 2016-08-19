@@ -42,3 +42,18 @@ To bootstrap your project (produces CSS):
 ```
 
 Various helper classes are available as [Polymer](https://polymer-project.org) [style modules](https://www.polymer-project.org/1.0/docs/devguide/styling#style-modules) under `skeleton/lib/styles/shared`.
+
+## Modular Typography
+
+As part of the modular approach, bottle also utilizes modular typography suggested by [John W. Long](http://thesassway.com/advanced/modular-css-typography). All supported "standard" typographical elements must be invoked either via a class equal to the tag name of the element, or by wrapping it in a `.typography` element, e.g.:
+
+```html
+<h4 class="p">A paragraph</h4>
+<div class="typography">
+	<p>A paragraph</p>
+</div>
+```
+
+## TODO
+
+Check [TODO.txt](https://github.com/TonyBogdanov/bottle/blob/master/TODO.txt).

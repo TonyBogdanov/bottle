@@ -1,1 +1,1 @@
-.table,.typography table{display:table;width:100%;font-family:sans-serif;margin-bottom:3rem;@apply (--table)}
+.table,.typography table{display:table;width:100%;max-width:100%;font-family:sans-serif;margin-bottom:3rem;@apply (--table)}

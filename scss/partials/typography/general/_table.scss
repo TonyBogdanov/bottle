@@ -6,6 +6,7 @@
   @include modular-element(table) {
     display: table;
     width: 100%;
+    max-width: 100%;
 
     @content;
   }

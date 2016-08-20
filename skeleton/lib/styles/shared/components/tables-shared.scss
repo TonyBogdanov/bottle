@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../modules/modules";
+
+.table-responsive {
+  @include table-responsive();
+  @include spacer();
+
+  @include modular-element(table) {
+    @include counter-spacer();
+  }
+}

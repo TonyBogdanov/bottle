@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Table body
+@mixin tbody() {
+  @include modular-element(tbody) {
+    display: table-row-group;
+
+    @content;
+  }
+}

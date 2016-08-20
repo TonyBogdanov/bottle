@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Table head
+@mixin thead() {
+  @include modular-element(thead) {
+    display: table-header-group;
+
+    @content;
+  }
+}

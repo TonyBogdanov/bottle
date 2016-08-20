@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Table foot
+@mixin tfoot() {
+  @include modular-element(tfoot) {
+    display: table-footer-group;
+
+    @content;
+  }
+}

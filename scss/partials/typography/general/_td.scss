@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Table cell
+@mixin td() {
+  @include modular-element(td) {
+    display: table-cell;
+
+    @content;
+  }
+}

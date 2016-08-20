@@ -7,11 +7,7 @@ Add tags:
 <bdi>	Isolates a part of text that might be formatted in a different direction from other text outside it
 <bdo>	Overrides the current text direction
 <canvas>	Used to draw graphics, on the fly, via scripting (usually JavaScript)
-<caption>	Defines a table caption
-<col>	Specifies column properties for each column within a <colgroup> element
-<colgroup>	Specifies a group of one or more columns in a table for formatting
 <datalist>	Specifies a list of pre-defined options for input controls
-<del>	Defines text that has been deleted from a document
 <details>	Defines additional details that the user can view or hide
 <dfn>	Represents the defining instance of a term
 <dialog>	Defines a dialog box or window
@@ -31,7 +27,6 @@ Add tags:
 <nav>	Defines navigation links
 <output>	Defines the result of a calculation
 <progress>	Represents the progress of a task
-<q>	Defines a short quotation
 <rp>	Defines what to show in browsers that do not support ruby annotations
 <rt>	Defines an explanation/pronunciation of characters (for East Asian typography)
 <ruby>	Defines a ruby annotation (for East Asian typography)
@@ -42,15 +37,7 @@ Add tags:
 <sub>	Defines subscripted text
 <summary>	Defines a visible heading for a <details> element
 <sup>	Defines superscripted text
-<table>	Defines a table
-<tbody>	Groups the body content in a table
-<td>	Defines a cell in a table
-<textarea>	Defines a multiline input control (text area)
-<tfoot>	Groups the footer content in a table
-<th>	Defines a header cell in a table
-<thead>	Groups the header content in a table
 <time>	Defines a date/time
-<tr>	Defines a row in a table
 <u>	Defines text that should be stylistically different from normal text
 <var>	Defines a variable
 <video>	Defines a video or movie

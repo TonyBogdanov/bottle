@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Table caption
+@mixin caption() {
+  @include modular-element(caption) {
+    display: table-caption;
+
+    @content;
+  }
+}

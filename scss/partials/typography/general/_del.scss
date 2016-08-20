@@ -1,0 +1,12 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Delete
+@mixin del() {
+  @include modular-element(del) {
+    display: inline;
+    text-decoration: line-through;
+
+    @content;
+  }
+}

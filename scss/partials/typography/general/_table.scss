@@ -1,0 +1,12 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Table
+@mixin table() {
+  @include modular-element(table) {
+    display: table;
+    width: 100%;
+
+    @content;
+  }
+}

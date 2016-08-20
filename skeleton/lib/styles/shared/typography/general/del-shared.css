@@ -1,0 +1,1 @@
+.del,.typography del{display:inline;text-decoration:line-through;@apply (--del)}

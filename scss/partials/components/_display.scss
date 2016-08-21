@@ -14,6 +14,16 @@
   display: inline-block !important;
 }
 
+@mixin display-flex() {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: box !important;
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 @mixin displays() {
   .display-inline {
     @include display-inline();
@@ -25,6 +35,10 @@
 
   .display-inline-block {
     @include display-inline-block();
+  }
+
+  .display-flex {
+    @include display-flex();
   }
 }
 
@@ -40,6 +54,9 @@
       }
       .display-#{$breakpoint}-inline-block {
         @include display-inline-block();
+      }
+      .display-#{$breakpoint}-flex {
+        @include display-flex();
       }
     }
   }

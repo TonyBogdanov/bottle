@@ -1,0 +1,21 @@
+// Dependencies
+@import "../../../breakpoints/breakpoints";
+
+// Flex shrinking
+@mixin flex-shrink-0() {
+  @include flex-shrink(0);
+}
+
+@mixin flex-shrink-1() {
+  @include flex-shrink(1);
+}
+
+@mixin flex-shrinks() {
+  .flex-shrink-0 {
+    @include flex-shrink-0();
+  }
+
+  .flex-shrink-1 {
+    @include flex-shrink-1();
+  }
+}

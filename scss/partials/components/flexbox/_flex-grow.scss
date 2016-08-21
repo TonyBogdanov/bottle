@@ -1,0 +1,21 @@
+// Dependencies
+@import "../../../breakpoints/breakpoints";
+
+// Flex growing
+@mixin flex-grow-0() {
+  @include flex-grow(0);
+}
+
+@mixin flex-grow-1() {
+  @include flex-grow(1);
+}
+
+@mixin flex-grows() {
+  .flex-grow-0 {
+    @include flex-grow-0();
+  }
+
+  .flex-grow-1 {
+    @include flex-grow-1();
+  }
+}

@@ -1,0 +1,45 @@
+// Dependencies
+@import "../../../breakpoints/breakpoints";
+
+// Item alignment
+@mixin align-self-flex-start() {
+  @include align-self(flex-start);
+}
+
+@mixin align-self-flex-end() {
+  @include align-self(flex-end);
+}
+
+@mixin align-self-center() {
+  @include align-self(center);
+}
+
+@mixin align-self-baseline() {
+  @include align-self(baseline);
+}
+
+@mixin align-self-stretch() {
+  @include align-self(stretch);
+}
+
+@mixin align-selfs() {
+  .align-self-flex-start {
+    @include align-self-flex-start();
+  }
+
+  .align-self-flex-end {
+    @include align-self-flex-end();
+  }
+
+  .align-self-center {
+    @include align-self-center();
+  }
+
+  .align-self-baseline {
+    @include align-self-baseline();
+  }
+
+  .align-self-stretch {
+    @include align-self-stretch();
+  }
+}

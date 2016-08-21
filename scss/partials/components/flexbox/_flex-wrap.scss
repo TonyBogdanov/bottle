@@ -1,0 +1,29 @@
+// Dependencies
+@import "../../../breakpoints/breakpoints";
+
+// Flex wrapping
+@mixin flex-wrap-wrap() {
+  @include flex-wrap(wrap);
+}
+
+@mixin flex-wrap-nowrap() {
+  @include flex-wrap(nowrap);
+}
+
+@mixin flex-wrap-wrap-reverse() {
+  @include flex-wrap(wrap-reverse);
+}
+
+@mixin flex-wraps() {
+  .flex-wrap-wrap {
+    @include flex-wrap-wrap();
+  }
+
+  .flex-wrap-nowrap {
+    @include flex-wrap-nowrap();
+  }
+
+  .flex-wrap-wrap-reverse {
+    @include flex-wrap-wrap-reverse();
+  }
+}

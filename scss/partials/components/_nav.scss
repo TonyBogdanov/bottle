@@ -1,0 +1,12 @@
+// Dependencies
+@import "../../modular/element";
+
+// Navigation
+@mixin nav() {
+  nav {
+    display: block;
+
+    @content;
+    @include modular-element-apply-mixin(nav);
+  }
+}

@@ -24,7 +24,6 @@ Add tags:
 <menu>	Defines a list/menu of commands
 <menuitem>	Defines a command/menu item that the user can invoke from a popup menu
 <meter>	Defines a scalar measurement within a known range (a gauge)
-<nav>	Defines navigation links
 <output>	Defines the result of a calculation
 <progress>	Represents the progress of a task
 <rp>	Defines what to show in browsers that do not support ruby annotations

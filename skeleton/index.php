@@ -91,6 +91,7 @@ function demoBlock($name, $title) {
     demoBlock('typography-ul', 'Typography / Unordered List');
     demoBlock('typography-ol-ul', 'Typography / Mixed List');
     demoBlock('typography-table', 'Typography / Table');
+    demoBlock('nav', 'Navigation');
     demoBlock('form', 'Form & Form Elements');
     demoBlock('utilities-text-decoration', 'Utilities / Text Decoration');
     demoBlock('utilities-text-transform', 'Utilities / Text Transform');

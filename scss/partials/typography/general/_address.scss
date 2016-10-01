@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Address
+@mixin address() {
+  @include modular-element(address) {
+    display: block;
+
+    @content;
+  }
+}

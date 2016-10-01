@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// iFrame
+@mixin iframe() {
+  @include modular-element(iframe) {
+    display: block;
+
+    @content;
+  }
+}

@@ -1,0 +1,13 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Sub
+@mixin sub() {
+  @include modular-element(sub) {
+    display: inline;
+    vertical-align: sub;
+    font-size: smaller;
+
+    @content;
+  }
+}

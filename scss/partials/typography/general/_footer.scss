@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Footer
+@mixin footer() {
+  @include modular-element(footer) {
+    display: block;
+
+    @content;
+  }
+}

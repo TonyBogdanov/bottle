@@ -1,0 +1,12 @@
+// Dependencies
+@import "../../../modular/element";
+
+// U
+@mixin u() {
+  @include modular-element(u) {
+    display: inline;
+    text-decoration: underline;
+
+    @content;
+  }
+}

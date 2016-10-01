@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Aside
+@mixin aside() {
+  @include modular-element(aside) {
+    display: block;
+
+    @content;
+  }
+}

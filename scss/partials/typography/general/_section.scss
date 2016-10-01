@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Section
+@mixin section() {
+  @include modular-element(section) {
+    display: block;
+
+    @content;
+  }
+}

@@ -1,0 +1,13 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Sup
+@mixin sup() {
+  @include modular-element(sup) {
+    display: inline;
+    vertical-align: super;
+    font-size: smaller;
+
+    @content;
+  }
+}

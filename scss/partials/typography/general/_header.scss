@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Header
+@mixin header() {
+  @include modular-element(header) {
+    display: block;
+
+    @content;
+  }
+}

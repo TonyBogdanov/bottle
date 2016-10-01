@@ -1,7 +1,5 @@
 Add tags:
 
-<address>	Defines contact information for the author/owner of a document
-<aside>	Defines content aside from the page content
 <audio>	Defines sound content
 <bdi>	Isolates a part of text that might be formatted in a different direction from other text outside it
 <bdo>	Overrides the current text direction
@@ -13,13 +11,9 @@ Add tags:
 <embed>	Defines a container for an external (non-HTML) application
 <figcaption>	Defines a caption for a <figure> element
 <figure>	Specifies self-contained content
-<footer>	Defines a footer for a document or section
-<header>	Defines a header for a document or section
-<iframe>	Defines an inline frame
 <ins>	Defines a text that has been inserted into a document
 <keygen>	Defines a key-pair generator field (for forms)
 <legend>	Defines a caption for a <fieldset> element
-<main>	Specifies the main content of a document
 <menu>	Defines a list/menu of commands
 <menuitem>	Defines a command/menu item that the user can invoke from a popup menu
 <meter>	Defines a scalar measurement within a known range (a gauge)
@@ -29,14 +23,9 @@ Add tags:
 <rt>	Defines an explanation/pronunciation of characters (for East Asian typography)
 <ruby>	Defines a ruby annotation (for East Asian typography)
 <samp>	Defines sample output from a computer program
-<section>	Defines a section in a document
 <source>	Defines multiple media resources for media elements (<video> and <audio>)
-<span>	Defines a section in a document
-<sub>	Defines subscripted text
 <summary>	Defines a visible heading for a <details> element
-<sup>	Defines superscripted text
 <time>	Defines a date/time
-<u>	Defines text that should be stylistically different from normal text
 <var>	Defines a variable
 <video>	Defines a video or movie
 <wbr>	Defines a possible line-break

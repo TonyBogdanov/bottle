@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../modular/element";
+
+// Span
+@mixin span() {
+  @include modular-element(span) {
+    display: inline;
+
+    @content;
+  }
+}

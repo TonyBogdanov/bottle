@@ -1,7 +1,6 @@
 Add tags:
 
 <address>	Defines contact information for the author/owner of a document
-<article>	Defines an article
 <aside>	Defines content aside from the page content
 <audio>	Defines sound content
 <bdi>	Isolates a part of text that might be formatted in a different direction from other text outside it

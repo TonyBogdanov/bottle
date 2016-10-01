@@ -1,0 +1,1 @@
+.sub,.typography sub{display:inline;vertical-align:sub;font-size:smaller;@apply (--sub)}

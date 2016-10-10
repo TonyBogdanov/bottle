@@ -1,0 +1,16 @@
+// Dependencies
+@import "../../../breakpoints/breakpoints";
+@import "../../../vendor/bourbon";
+
+// Flex ordering
+@mixin orders() {
+  @each $bp in map-keys($breakpoints) {
+    @for $i from 1 through 12 {
+      .order-#{$bp}-#{$i} {
+        @include media-breakpoint-up($bp) {
+          @include order($i);
+        }
+      }
+    }
+  }
+}

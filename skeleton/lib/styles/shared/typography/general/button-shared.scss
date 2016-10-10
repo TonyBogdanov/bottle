@@ -1,5 +1,9 @@
 // Dependencies
-@import "../../../modules/modules";
+// Strict dependencies instead of all modules import, because bourbon also has a deprecated button() mixin
+@import "../../../../../../bower_components/bottle/scss/variables/variables";
+@import "../../../../../../bower_components/bottle/scss/spacer/spacer";
+@import "../../../../../../bower_components/bottle/scss/partials/typography/general/button";
+@import "../../../modules/variables";
 
 @include button() {
   font-family: sans-serif;

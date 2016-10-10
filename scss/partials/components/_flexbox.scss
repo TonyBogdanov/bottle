@@ -10,6 +10,7 @@
 @import "flexbox/justify-content";
 @import "flexbox/flex-grow";
 @import "flexbox/flex-shrink";
+@import "flexbox/order";
 
 @mixin flexbox() {
   @include flex-directions();
@@ -20,4 +21,5 @@
   @include justify-contents();
   @include flex-grows();
   @include flex-shrinks();
+  @include orders();
 }

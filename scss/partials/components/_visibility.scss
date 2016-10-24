@@ -6,12 +6,12 @@
 @mixin visibility() {
   [class*="hidden-"] {
     @each $bp in map-keys($breakpoints) {
-      .hidden-#{$bp}-up {
+      &.hidden-#{$bp}-up {
         @include media-breakpoint-up($bp) {
           display: none !important;
         }
       }
-      .hidden-#{$bp}-down {
+      &.hidden-#{$bp}-down {
         @include media-breakpoint-down($bp) {
           display: none !important;
         }

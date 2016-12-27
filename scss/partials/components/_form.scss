@@ -64,3 +64,12 @@
     @include modular-element-apply-mixin(fieldset);
   }
 }
+
+@mixin disable-webkit-autofill() {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    @include transition(background-color 5000s ease-in-out 0s);
+  }
+}

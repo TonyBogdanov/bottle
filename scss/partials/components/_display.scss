@@ -2,6 +2,10 @@
 @import "../../breakpoints/breakpoints";
 
 // Display helpers
+@mixin display-none() {
+  display: none !important;
+}
+
 @mixin display-inline() {
   display: inline !important;
 }
@@ -25,6 +29,10 @@
 }
 
 @mixin displays() {
+  .display-none {
+    @include display-none();
+  }
+
   .display-inline {
     @include display-inline();
   }
@@ -46,6 +54,9 @@
 @mixin responsive-displays() {
   @each $breakpoint in map-keys($breakpoints) {
     @include media-breakpoint-up($breakpoint) {
+      .display-#{$breakpoint}-none {
+        @include display-none();
+      }
       .display-#{$breakpoint}-inline {
         @include display-inline();
       }

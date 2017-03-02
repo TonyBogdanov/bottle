@@ -54,5 +54,27 @@
         }
       }
     }
+
+    $sequence: map-keys($breakpoints);
+
+    @for $i from 1 through length($sequence) - 1 {
+      $bp-from: nth($sequence, $i);
+
+      @for $j from $i + 1 through length($sequence) {
+        $bp-to: nth($sequence, $j);
+
+        @if not (1 == $i and length($sequence) == $j) {
+          &.visible-between-#{$bp-from}-#{$bp-to}-block {
+            display: block !important;
+          }
+          &.visible-between-#{$bp-from}-#{$bp-to}-inline {
+            display: inline !important;
+          }
+          &.visible-between-#{$bp-from}-#{$bp-to}-inline-block {
+            display: inline-block !important;
+          }
+        }
+      }
+    }
   }
 }

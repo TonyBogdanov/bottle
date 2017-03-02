@@ -6,6 +6,11 @@
 @mixin visibility() {
   [class*="hidden-"] {
     @each $bp in map-keys($breakpoints) {
+      &.hidden-#{$bp}-only {
+        @include media-breakpoint-only($bp) {
+          display: none !important;
+        }
+      }
       &.hidden-#{$bp}-up {
         @include media-breakpoint-up($bp) {
           display: none !important;
@@ -23,6 +28,21 @@
     display: none !important;
 
     @each $bp in map-keys($breakpoints) {
+      &.visible-#{$bp}-only-block {
+        @include media-breakpoint-only($bp) {
+          display: block !important;
+        }
+      }
+      &.visible-#{$bp}-only-inline {
+        @include media-breakpoint-only($bp) {
+          display: inline !important;
+        }
+      }
+      &.visible-#{$bp}-only-inline-block {
+        @include media-breakpoint-only($bp) {
+          display: inline-block !important;
+        }
+      }
       &.visible-#{$bp}-up-block {
         @include media-breakpoint-up($bp) {
           display: block !important;

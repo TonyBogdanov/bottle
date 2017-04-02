@@ -1,7 +1,6 @@
-// Dependencies
-@import "../variables/bottle-variables";
-
 // Base settings for the entire document
 * {
+  box-sizing: border-box;
+  outline: none !important;
   text-rendering: optimizelegibility !important;
 }

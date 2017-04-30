@@ -28,7 +28,7 @@ function _tb_import_script(url, callback) {
 }
 
 // Imports
-_tb_import_script('../bower_components/webcomponentsjs/webcomponents-lite.min.js');
+_tb_import_script('bower_components/webcomponentsjs/webcomponents-lite.min.js');
 _tb_import('lib/lib.html');
 
 // Once Polymer is ready

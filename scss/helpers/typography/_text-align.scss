@@ -1,0 +1,37 @@
+// Dependencies
+@import "../../breakpoints/breakpoints";
+
+// Text aligns
+.text-align-left {
+  text-align: left !important;
+}
+
+.text-align-center {
+  text-align: center !important;
+}
+
+.text-align-right {
+  text-align: right !important;
+}
+
+.text-align-justify {
+  text-align: justify !important;
+}
+
+// Responsive text aligns
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    .text-#{$breakpoint}-left {
+      text-align: left !important;
+    }
+    .text-#{$breakpoint}-center {
+      text-align: center !important;
+    }
+    .text-#{$breakpoint}-right {
+      text-align: right !important;
+    }
+    .text-#{$breakpoint}-justify {
+      text-align: justify !important;
+    }
+  }
+}

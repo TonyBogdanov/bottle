@@ -1,6 +1,6 @@
 {
-  "name": "barrel",
-  "homepage": "https://github.com/TonyBogdanov/barrel",
+  "name": "bottle",
+  "homepage": "https://github.com/TonyBogdanov/bottle",
   "authors": [
     "Tony Bogdanov <tonybogdanov@gmail.com>"
   ],
@@ -8,7 +8,7 @@
   "moduleType": [],
   "license": "MIT",
   "main": [
-    "scss/_barrel.scss"
+    "scss/_mixins.scss"
   ],
   "ignore": [
     "**/.*",
@@ -18,8 +18,6 @@
     "tests"
   ],
   "dependencies": {
-    "bourbon": "^4.2.7",
-    "mathsass": "^0.9.5",
-    "bootstrap": "4"
+    "mathsass": "^0.9.5"
   }
 }

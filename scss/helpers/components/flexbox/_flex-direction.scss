@@ -1,0 +1,16 @@
+// Flex direction
+.flex-direction-row {
+  @include flex-direction(row);
+}
+
+.flex-direction-row-reverse {
+  @include flex-direction(row-reverse);
+}
+
+.flex-direction-column {
+  @include flex-direction(column);
+}
+
+.flex-direction-column-reverse {
+  @include flex-direction(column-reverse);
+}

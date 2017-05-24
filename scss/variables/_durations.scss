@@ -1,8 +1,8 @@
 // Default transition durations
-$fastest:         0.1s;
-$veryFast:        0.25s;
-$fast:            0.35s;
-$medium:          0.5s;
-$slow:            0.75s;
-$verySlow:        1s;
-$slowest:         2.5s;
+$fastest:         0.1s  !default;
+$veryFast:        0.25s !default;
+$fast:            0.35s !default;
+$medium:          0.5s  !default;
+$slow:            0.75s !default;
+$verySlow:        1s    !default;
+$slowest:         2.5s  !default;

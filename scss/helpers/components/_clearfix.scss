@@ -1,0 +1,7 @@
+// Dependencies
+@import "../../commons/commons/clearfix";
+
+// Clearfix
+.clearfix {
+  @include clearfix();
+}

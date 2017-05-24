@@ -1,0 +1,12 @@
+// Flex wrapping
+.flex-wrap-wrap {
+  @include flex-wrap(wrap);
+}
+
+.flex-wrap-nowrap {
+  @include flex-wrap(nowrap);
+}
+
+.flex-wrap-wrap-reverse {
+  @include flex-wrap(wrap-reverse);
+}

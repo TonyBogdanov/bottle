@@ -1,0 +1,11 @@
+// Dependencies
+@import "../../../vendor/bourbon";
+
+// Flex growing
+.flex-grow-0 {
+  @include flex-grow(0);
+}
+
+.flex-grow-1 {
+  @include flex-grow(1);
+}

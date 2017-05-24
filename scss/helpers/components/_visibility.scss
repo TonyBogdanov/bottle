@@ -1,0 +1,100 @@
+// Dependencies
+@import "../../variables/grid";
+@import "../../breakpoints/breakpoints";
+
+// Control breakpoint based visibility
+[class*="hidden-"] {
+  @each $bp in map-keys($breakpoints) {
+    &.hidden-#{$bp}-only {
+      @include media-breakpoint-only($bp) {
+        display: none !important;
+      }
+    }
+    &.hidden-#{$bp}-up {
+      @include media-breakpoint-up($bp) {
+        display: none !important;
+      }
+    }
+    &.hidden-#{$bp}-down {
+      @include media-breakpoint-down($bp) {
+        display: none !important;
+      }
+    }
+  }
+}
+
+[class*="visible-"] {
+  display: none !important;
+
+  @each $bp in map-keys($breakpoints) {
+    &.visible-#{$bp}-only-block {
+      @include media-breakpoint-only($bp) {
+        display: block !important;
+      }
+    }
+    &.visible-#{$bp}-only-inline {
+      @include media-breakpoint-only($bp) {
+        display: inline !important;
+      }
+    }
+    &.visible-#{$bp}-only-inline-block {
+      @include media-breakpoint-only($bp) {
+        display: inline-block !important;
+      }
+    }
+    &.visible-#{$bp}-up-block {
+      @include media-breakpoint-up($bp) {
+        display: block !important;
+      }
+    }
+    &.visible-#{$bp}-up-inline {
+      @include media-breakpoint-up($bp) {
+        display: inline !important;
+      }
+    }
+    &.visible-#{$bp}-up-inline-block {
+      @include media-breakpoint-up($bp) {
+        display: inline-block !important;
+      }
+    }
+    &.visible-#{$bp}-down-block {
+      @include media-breakpoint-down($bp) {
+        display: block !important;
+      }
+    }
+    &.visible-#{$bp}-down-inline {
+      @include media-breakpoint-down($bp) {
+        display: inline !important;
+      }
+    }
+    &.visible-#{$bp}-down-inline-block {
+      @include media-breakpoint-down($bp) {
+        display: inline-block !important;
+      }
+    }
+  }
+
+  $sequence: map-keys($breakpoints);
+
+  @for $i from 1 through length($sequence) - 1 {
+    $bp-from: nth($sequence, $i);
+
+    @for $j from $i + 1 through length($sequence) {
+      $bp-to: nth($sequence, $j);
+
+      @if not (1 == $i and length($sequence) == $j) {
+        @include media-breakpoint-between($bp-from, $bp-to) {
+          &.visible-between-#{$bp-from}-#{$bp-to}-block {
+            display: block !important;
+          }
+          &.visible-between-#{$bp-from}-#{$bp-to}-inline {
+            display: inline !important;
+          }
+          &.visible-between-#{$bp-from}-#{$bp-to}-inline-block {
+            display: inline-block !important;
+          }
+        }
+      }
+    }
+  }
+}

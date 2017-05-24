@@ -1,4 +1,4 @@
-# barrel
+# Bottle 2.0
 
 [![Buy Me a Coffee](http://static.tonybogdanov.com/github/coffee.svg)](http://ko-fi.co/1236KUKJNC96B)
 
@@ -6,16 +6,17 @@ An extended collection of useful tools and snippets to help you quickly bootstra
 
 - [Bourbon](http://bourbon.io)
 - [MathSass](https://github.com/terkel/mathsass)
-- [Bootstrap 4](http://getbootstrap.com)
 
-## Installing
+## Installation
 
-To install barrel you'll need [Bower](http://bower.io/). Once you do, just run:
+To install you'll need [Bower](http://bower.io). Once you do, run:
 
 ```shell
-bower install --save barrel
+bower install --save bottle#v2
 ```
 
-And you're done.
+## Usage
 
-Enjoy!
+```scss
+@import "bower_components/bottle/scss/mixins";
+```

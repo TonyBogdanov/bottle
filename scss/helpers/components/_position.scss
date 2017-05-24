@@ -1,0 +1,126 @@
+// Dependencies
+@import "../../breakpoints/breakpoints";
+
+// Positioning
+.position-static {
+  position: static !important;
+}
+
+.position-fixed {
+  position: fixed !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.position-top-left,
+.position-top-center,
+.position-top-right,
+.position-top-left-outer,
+.position-top-right-outer {
+  top: 0;
+}
+
+.position-top-left,
+.position-middle-left,
+.position-bottom-left,
+.position-top-left-above,
+.position-bottom-left-under {
+  left: 0;
+}
+
+.position-middle-left,
+.position-middle-center,
+.position-middle-right {
+  top: 50%;
+}
+
+.position-top-center,
+.position-middle-center,
+.position-bottom-center {
+  left: 50%;
+}
+
+.position-top-center,
+.position-bottom-center {
+  @include transform(translateX(-50%));
+}
+
+.position-top-right,
+.position-middle-right,
+.position-bottom-right,
+.position-top-right-above,
+.position-bottom-right-under {
+  right: 0;
+}
+
+.position-middle-left,
+.position-middle-right {
+  @include transform(translateY(-50%));
+}
+
+.position-middle-center {
+  @include transform(translate(-50%, -50%));
+}
+
+.position-bottom-left,
+.position-bottom-center,
+.position-bottom-right {
+  bottom: 0;
+}
+
+.position-top-left-above,
+.position-top-left-corner,
+.position-top-right-above,
+.position-top-right-corner {
+  bottom: 100%;
+}
+
+.position-top-left-outer,
+.position-top-left-corner,
+.position-bottom-left-outer,
+.position-bottom-left-corner {
+  right: 100%;
+}
+
+.position-top-right-outer,
+.position-top-right-corner,
+.position-bottom-right-outer,
+.position-bottom-right-corner {
+  left: 100%;
+}
+
+.position-bottom-left-under,
+.position-bottom-left-corner,
+.position-bottom-right-under,
+.position-bottom-right-corner {
+  top: 100%;
+}
+
+.position-bottom-left-outer,
+.position-bottom-right-outer {
+  bottom: 0;
+}
+
+// Responsive positioning
+@each $breakpoint in map-keys($breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    .position-#{$breakpoint}-static {
+      @extend .position-static;
+    }
+    .position-#{$breakpoint}-fixed {
+      @extend .position-fixed;
+    }
+    .position-#{$breakpoint}-relative {
+      @extend .position-relative;
+    }
+    .position-#{$breakpoint}-absolute {
+      @extend .position-absolute;
+    }
+  }
+}

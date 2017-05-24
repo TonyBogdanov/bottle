@@ -1,0 +1,23 @@
+// Dependencies
+@import "../../../vendor/bourbon";
+
+// Item alignment
+.align-self-flex-start {
+  @include align-self(flex-start);
+}
+
+.align-self-flex-end {
+  @include align-self(flex-end);
+}
+
+.align-self-center {
+  @include align-self(center);
+}
+
+.align-self-baseline {
+  @include align-self(baseline);
+}
+
+.align-self-stretch {
+  @include align-self(stretch);
+}

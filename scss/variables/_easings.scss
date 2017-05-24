@@ -1,6 +1,6 @@
 // Default transition easings
-$swiftOut:        cubic-bezier(0.55, 0, 0.1, 1);
-$swiftIn:         cubic-bezier(0, 0.55, 1, 0.1);
-$easeIn:          cubic-bezier(0.5, 0.01, 1, 0.01);
-$easeOut:         cubic-bezier(0.01, 0.5, 0.01, 1);
-$swift:           $swiftOut;
+$swiftOut:        cubic-bezier(0.55, 0, 0.1, 1)     !default;
+$swiftIn:         cubic-bezier(0, 0.55, 1, 0.1)     !default;
+$easeIn:          cubic-bezier(0.5, 0.01, 1, 0.01)  !default;
+$easeOut:         cubic-bezier(0.01, 0.5, 0.01, 1)  !default;
+$swift:           $swiftOut                         !default;

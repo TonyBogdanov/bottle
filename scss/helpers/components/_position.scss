@@ -111,16 +111,16 @@
 @each $breakpoint in map-keys($breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     .position-#{$breakpoint}-static {
-      @extend .position-static;
+      position: static !important;
     }
     .position-#{$breakpoint}-fixed {
-      @extend .position-fixed;
+      position: fixed !important;
     }
     .position-#{$breakpoint}-relative {
-      @extend .position-relative;
+      position: relative !important;
     }
     .position-#{$breakpoint}-absolute {
-      @extend .position-absolute;
+      position: absolute !important;
     }
   }
 }

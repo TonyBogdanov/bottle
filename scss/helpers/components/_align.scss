@@ -21,13 +21,16 @@
 @each $breakpoint in map-keys($breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     .block-#{$breakpoint}-left {
-      @extend .block-align-left;
+      margin-left: 0 !important;
+      margin-right: auto !important;
     }
     .block-#{$breakpoint}-center {
-      @extend .block-align-center;
+      margin-left: auto !important;
+      margin-right: auto !important;
     }
     .block-#{$breakpoint}-right {
-      @extend .block-align-right;
+      margin-left: auto !important;
+      margin-right: 0 !important;
     }
   }
 }

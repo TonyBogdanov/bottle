@@ -5,7 +5,7 @@
 ## This is a legacy version
 
 It is no longer supported or maintained.
-For the latest version see branch [bottle-2](https://github.com/TonyBogdanov/bottle/tree/bottle-2).
+For the latest version see branch [v2](https://github.com/TonyBogdanov/bottle/tree/v2).
 
 An extended collection of useful tools and snippets to help you quickly bootstrap a new project, utilizing:
 

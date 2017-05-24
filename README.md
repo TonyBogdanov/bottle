@@ -2,6 +2,11 @@
 
 [![Buy Me a Coffee](http://static.tonybogdanov.com/github/coffee.svg)](http://ko-fi.co/1236KUKJNC96B)
 
+## This is a legacy version
+
+It is no longer supported or maintained.
+For the latest version see branch [bottle-2](https://github.com/TonyBogdanov/bottle/tree/bottle-2).
+
 An extended collection of useful tools and snippets to help you quickly bootstrap a new project, utilizing:
 
 - [Bourbon](http://bourbon.io)
